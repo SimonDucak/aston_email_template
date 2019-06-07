@@ -1,0 +1,80 @@
+// Dependencies
+@import "../deps/variables";
+@import "../deps/functions";
+@import "../deps/mixin";
+
+// Styles
+@media print {
+  @page { margin: 0; }
+  body { margin: 0.8cm; }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  width: calc(19.4cm);
+}
+
+header {
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+}
+
+article {
+  // A4 pri 150 PPI
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+dl {
+  dt,dd {
+    margin-bottom: 5px;
+  }
+
+  dt {
+    width: 30%;
+    padding-right: 10px;
+  }
+  dd {
+    width: 70%;
+    padding-left: 10px;
+  }
+
+  p {
+    margin: 1rem 0rem;
+  }
+
+  ul {
+    margin-top: 15px;
+
+    li {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.small-dl {
+  font-size: 14px;
+
+  dt {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  dt,dd {
+    margin-bottom: 10px;
+  }
+}

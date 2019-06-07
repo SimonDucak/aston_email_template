@@ -1,0 +1,7 @@
+@function columnsToPercentage($columns) {
+  @return $columns / $ALL_COLUMNS * 100%;
+}
+
+@function pxToRem($size) {
+  @return  $size / 16;
+}

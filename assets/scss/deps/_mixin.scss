@@ -1,0 +1,20 @@
+@mixin remove-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin square($dimension) {
+  width: $dimension;
+  height: $dimension;
+}
+
+@mixin fixed-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@mixin wrapper {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./functions";
+@import "./mixin";
+
+*, *:before, *:after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+ul,li,body,h1,h2,h3,h4,h5,h6,dl,dd,dt,p {
+  @include remove-margin-padding;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

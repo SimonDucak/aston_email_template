@@ -1,0 +1,55 @@
+// Dependencies
+@import "../deps/variables";
+@import "../deps/functions";
+@import "../deps/mixin";
+
+// Styles
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext');
+
+$font-default: 14px;
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: $font-default;
+}
+
+.font-small {
+  font-size: $font-default - 2;
+}
+
+.font-medium {
+  font-size: $font-default + 2;
+}
+
+.font-big {
+  font-size: $font-default + 4;
+}
+
+.time-new-roman {
+  font-family: 'Times New Roman', serif;
+}
+
+h1 {
+  line-height: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+p {
+  line-height: 16px;
+}
+
+.block-headline {
+  width: 100%;
+  border: 1px solid $black;
+  padding: 5px;
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+}

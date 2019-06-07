@@ -1,0 +1,113 @@
+@import "./variables";
+@import "./functions";
+@import "./mixin";
+
+// Positions
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.up {
+  top: 0;
+  left: 0;
+}
+
+.down {
+  bottom: 0;
+  left: 0;
+}
+
+// Selects
+.select-off {
+  pointer-events: none;
+  user-select: none;
+}
+
+// Grid
+@for $i from 1 through $ALL_COLUMNS {
+  .col-#{$i} {
+    width: columnsToPercentage($i);
+  }
+}
+
+// Flexbox
+.flex {
+  display: flex;
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f-wrap-center {
+  @extend .f-center;
+  @extend .f-wrap;
+}
+
+f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@each $key, $val in $FLEX_VALUES_LIST {
+  .justify-#{$key} {
+    justify-content: #{$val};
+  }
+}
+@each $key, $val in $FLEX_VALUES_LIST {
+  .align-items-#{$key} {
+    align-items: #{$val};
+  }
+}
+
+// Padding
+@for $i from 1 through $COUNT_PADDING {
+  .p-#{$i} {
+    padding: #{$i * $PADDING_SIZE}px;
+  }
+}
+
+// Margin
+@for $i from 1 through $COUNT_MARGIN {
+  .mb-#{$i} {
+    margin-bottom: #{$i * $MARGIN_SIZE}px;
+  }
+}
+
+// General
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
