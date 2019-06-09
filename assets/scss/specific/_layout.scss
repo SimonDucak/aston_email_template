@@ -6,7 +6,7 @@
 // Styles
 @media print {
   @page { margin: 0; }
-  body { margin: 0.8cm; }
+  body { margin: 1.6cm; }
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +17,8 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  width: calc(19.4cm);
+  width: calc(17.8cm);
+  height: 24.5cm;
 }
 
 header {
@@ -31,7 +32,6 @@ footer {
 article {
   // A4 pri 150 PPI
   width: 100%;
-  padding-bottom: 50px;
 }
 
 dl {
@@ -49,11 +49,11 @@ dl {
   }
 
   p {
-    margin: 1rem 0rem;
+    margin: 5px 0rem;
   }
 
   ul {
-    margin-top: 15px;
+    margin-top: 5px;
 
     li {
       margin-bottom: 5px;
@@ -75,6 +75,6 @@ dl {
   }
 
   dt,dd {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }

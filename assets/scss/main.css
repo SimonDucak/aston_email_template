@@ -236,7 +236,7 @@ f-wrap {
     margin: 0;
   }
   body {
-    margin: 0.8cm;
+    margin: 1.6cm;
   }
 }
 ::-webkit-scrollbar {
@@ -247,7 +247,8 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  width: calc(19.4cm);
+  width: calc(17.8cm);
+  height: 24.5cm;
 }
 
 header {
@@ -260,7 +261,6 @@ footer {
 
 article {
   width: 100%;
-  padding-bottom: 50px;
 }
 
 dl dt, dl dd {
@@ -275,10 +275,10 @@ dl dd {
   padding-left: 10px;
 }
 dl p {
-  margin: 1rem 0rem;
+  margin: 5px 0rem;
 }
 dl ul {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 dl ul li {
   margin-bottom: 5px;
@@ -295,7 +295,7 @@ dl ul li:last-child {
   font-weight: normal;
 }
 .small-dl dt, .small-dl dd {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 body {
